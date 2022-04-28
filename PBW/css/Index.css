@@ -1,0 +1,132 @@
+@font-face {
+    font-family: rakyat;
+    src: url(../fonts/Rakyat.woff);
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    height: auto;
+    background: #000000;
+}
+
+main{
+    background-image: url(../assets/catMain.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+
+nav{
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: rakyat;
+}
+
+nav a{
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    transform: translateY(-4px);
+}
+
+nav a.active{
+    background-color: #ffee00;
+    color: rgb(0, 0, 0);
+    
+}
+
+nav .icon{
+    display: none;
+}
+
+nav .form{
+    float: right;
+    margin-right: 10px;
+    right: 0;
+}
+
+nav .form:hover{
+    transform: translateY(-4px);
+}
+
+@media screen and (max-width : 600px) {
+    nav a:not(:first-child){
+        display: none;
+    }
+    nav a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav.responsive{
+        position: relative;
+    }
+    nav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.box-1{
+    float: right;
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    right: 10%;
+    top: 20%;
+    font-family: rakyat;
+}
+
+.box-1 h1{
+    word-wrap: break-word;
+    font-size: 2.7rem;
+}
+
+.box-1 p{
+    font-size: 1.5rem;
+}
+
+.box-1 button {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ffee00;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 20%;
+    border-radius: 4px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    opacity: 80%;
+    font-weight: bold;
+    font-family: rakyat;
+}
+
+.box-1 button:hover{
+    transform: translateY(-4px);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <script src="https://kit.fontawesome.com/9f4cb2ecef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Registrasi.css">
+    <script src="../js/Index.js"></script>
+</head>
+<body>
+    <main>
+        <nav class="topNav" id="myTopNav">
+            <a href="Index.html" class="active">Meaw</a>
+            <a href="About.html">About</a>
+            <a href="FunFacts.html">Fun Facts</a>
+            <a href="Donate.html">Donate</a>
+            <a href="Login.html" class="form">Login</a>
+            <a href="Registrasi.html" class="form">Register</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <form action="Login.html">
+            <div class="container-form">
+                <h1>Registrasi</h1>
+                <p>Silahkan isi untuk membuat akun anda.</p>
+                <hr>
+                <label for="nama"><b>Nama</b></label>
+                <input type="text" placeholder="Nama" name="nama" id="nama" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Email" name="email" id="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Password" name="psw" id="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Ulang Password" name="psw-repeat" id="psw-repeat" required>
+                <hr>
+
+                <p>Dengan membuat akun maka anda menyetujui <a href="">syarat dan kondisi</a> yang kami berikan.</p>
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+
+            <div class="container-form signin">
+                <p>Sudah memiliki akun? <a href="Login.html">Login</a>.</p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

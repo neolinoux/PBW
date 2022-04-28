@@ -1,0 +1,81 @@
+@font-face {
+    font-family: rakyat;
+    src: url(../fonts/Rakyat.woff);
+    font-weight: bold;
+}
+
+.card{
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25vw;
+    height: 25vw;
+    float: left;
+    left: 10%;
+    margin-top: 20%;
+    padding: 0;
+    position: relative;
+}
+
+.card:hover{
+    box-shadow: 0 0.5vw 1vw rgba(255, 255, 255, 0.2);
+    transform: translateY(-1vw);
+}
+
+.card-description {
+    display: block;
+    font-size: 1.2vw;
+    color: #828282;
+    bottom: 0;
+}
+
+.card img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: inherit;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+section h1{
+    font-size: 2.5em;
+    color: yellow;
+    margin-top: 3vw;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: rakyat;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(0, 0, 0),
+        0 0 20px rgb(0, 0, 0),
+        0 0 30px rgb(0, 0, 0),
+        0 0 40px rgb(0, 0, 0),
+        0 0 50px rgb(0, 0, 0),
+        0 0 60px rgb(0, 0, 0),
+        0 0 70px rgb(0, 0, 0);
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 
+        0 0 30px #ffde4d, 
+        0 0 40px #ffde4d, 
+        0 0 50px #ffde4d, 
+        0 0 60px #ffde4d, 
+        0 0 70px #ffde4d, 
+        0 0 80px #ffde4d;
+    }
+}
+
+table{
+    border-collapse: collapse;
+    font-family: rakyat;
+}
+
+td{
+    padding: 0.5vw;
+}
